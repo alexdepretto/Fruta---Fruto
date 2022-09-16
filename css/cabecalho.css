@@ -1,0 +1,53 @@
+
+#cabecalho {
+    align-items: center;
+    background: lightgray;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/*** LINKS DE NAVEGAÇÃO ***/
+
+.navegador_lista { display: flex }
+
+.lista_itens { list-style: none }
+
+.lista_itens:last-child { margin-right: 0 }
+
+.navegador_lista a {
+    color: black;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navegador_lista a:hover { text-decoration: underline }
+
+.links.ativo {
+    color: red;
+    font-weight: bold;
+}
+
+
+/*** DESIGN RESPONSIVO ***/
+
+@media screen and (min-width: 0) {
+    .cabecalho {
+        padding: 0;
+        justify-content: 0 1rem;
+    }
+
+    .logo { display: none }
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+
+    .logo { display: block }
+}

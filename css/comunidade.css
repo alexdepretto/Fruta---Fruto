@@ -1,0 +1,77 @@
+
+.comunidade {
+    text-align: center;
+    padding: 3rem;
+}
+
+.comunidade_titulo {
+    margin-bottom: 1rem;
+    color: darkred;
+    font-size: 3.4rem;
+    font-family: pacifico, cursive;
+}
+
+.comunidade_descricao {
+    font-weight: 300;
+    font-size: 1.75rem;
+    color: darkgreen;
+}
+
+
+/*** PESSOAS ***/
+
+#pessoas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+.pessoa_nome {
+    margin: 1rem 0;
+    font-family: pacifico, cursive;
+    color: darkred;
+    font-size: 2rem;
+}
+
+.pessoa_funcao {
+    text-transform: lowercase;
+    color: darkgray;
+    font-size: 1.25rem;
+}
+
+.pessoa_imagem {
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.pessoa_imagem-roberta { background-image: url('../img/pessoas/roberta.jpg') }
+
+.pessoa_imagem-marcela { background-image: url('../img/pessoas/marcela.jpg') }
+
+.pessoa_imagem-andreia { background-image: url('../img/pessoas/andreia.jpg') }
+
+
+/*** DESIGN RESPONSIVO ***/
+
+@media screen and (min-width: 0) {
+    #pessoas { flex-direction: column }
+
+    .pessoa { margin-bottom: 2rem }
+}
+
+@media screen and (min-width: 768px) {
+    #pessoas { flex-direction: row }
+
+    .pessoa { margin-bottom: 0 }
+}
+

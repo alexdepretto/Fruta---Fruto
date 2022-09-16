@@ -1,0 +1,34 @@
+
+.descricao {
+    text-align: center;
+
+}
+
+.descricao_titulo {
+    color: darkred;
+    font-family: pacifico, cursive;
+}
+
+.descricao_texto {
+    color: darkgray;
+    font-weight: lighter;
+}
+
+
+/*** DESIGN RESPONSIVO ***/
+
+@media screen and (min-width: 0) {
+    .descricao { padding: 2.5rem 1rem }
+
+    .descricao_titulo { font-size: 2rem }
+
+    .descricao_texto { font-size: 1.3rem }
+}
+
+@media screen and (min-width: 768px) {
+    .descricao { padding: 2.5rem }
+
+    .descricao_titulo { font-size: 3.2rem }
+
+    .descricao_texto { font-size: 1.75rem }
+}
